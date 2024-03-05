@@ -1,0 +1,14 @@
+.header{
+    text-align: center;
+    color: rgb(29, 29, 78);
+}
+.button{
+    cursor: pointer;
+    border: 1px solid #8a8a8a;
+    padding: 0.7rem 3rem;
+    margin-left: 70rem;
+    border-radius: 50px;
+
+    font-size: medium;
+    background-color: rgb(202, 231, 221);
+}
