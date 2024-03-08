@@ -4,7 +4,7 @@ import classes from "./Cart.module.css";
 import Modal from "../Modal/Modal";
 
 const Cart = (props) => {
-  const { items, decreaseQuantity } = useContext(Cartcontext); // Assuming you have a cart items state and a function to remove items in your context
+  const { items, decreaseQuantity } = useContext(Cartcontext);
 
   const handleRemoveItem = (productName) => {
     decreaseQuantity(productName);
@@ -16,7 +16,6 @@ const Cart = (props) => {
       <ul>
         {items.map(
           (item) =>
-            // Check if the item has a productName
             item.productName && (
               <li key={item.id}>
                 <div className={classes.cartItem}>
@@ -24,6 +23,9 @@ const Cart = (props) => {
                   <span> Price: {item.productprice}</span>
                   <span> Description: {item.productDescription} </span>
                   <span>Quantity: {item.quantity}</span>
+                  {" - "}
+                  <span> Total Price: {item.productprice * item.quantity}</span>
+                  {" - "}
                   <button onClick={() => handleRemoveItem(item.productName)}>
                     Remove
                   </button>
