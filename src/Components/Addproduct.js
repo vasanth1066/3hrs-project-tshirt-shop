@@ -16,7 +16,7 @@ const Addproduct = (props) => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    let item = {
+    let items = {
       productName,
       productDescription,
       productprice,
@@ -24,10 +24,10 @@ const Addproduct = (props) => {
       productQuantity_M,
       productQuantity_L,
     };
-    setProducts([...products, item]);
-    cartcontx.addItem({ item });
+    setProducts([...products, items]);
+    cartcontx.addItem({ items });
     console.log("incontext", cartcontx);
-    console.log(item);
+    console.log(items);
   };
 
   return (

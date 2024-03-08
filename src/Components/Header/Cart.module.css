@@ -1,0 +1,21 @@
+.cancel_button{
+    cursor: pointer;
+    border: 1px solid #0f0202;
+    background-color: rgba(233, 228, 228, 0.979);
+    padding: 0.7rem 3rem;
+    margin-top: 1rem;
+    align-items: center;
+    margin-left: 17rem;
+  
+    border-radius: 50px;
+}
+.order_button{
+    cursor: pointer;
+    border: 1px solid #040a05;
+    padding: 0.7rem 3rem;
+    margin-top: 1rem;
+    align-items: center;
+    margin-left: 17rem;
+    background-color: rgb(177, 212, 168);
+    border-radius: 50px;
+}

@@ -1,10 +1,11 @@
 import classes from "./header.module.css";
+import HeaderButton from "./HeaderButton";
 
-function Header() {
+function Header(props) {
   return (
     <div>
       <h1 className={classes.header}>T-SHIRT SHOP</h1>
-      <button className={classes.button}>cart</button>
+      <HeaderButton onClick={props.onshowhandler}></HeaderButton>
     </div>
   );
 }
